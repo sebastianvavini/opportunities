@@ -13,7 +13,9 @@ import com.goodbit.opportunities.viewmodel.OpportunitiesViewModel
 
 class OpportunitiesFragment : Fragment() {
 
+    //private var _binding: FragmentOpportunitiesBinding? = null
     private var _binding: FragmentOpportunitiesBinding? = null
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -30,9 +32,9 @@ class OpportunitiesFragment : Fragment() {
         _binding = FragmentOpportunitiesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        //val textView: TextView = binding.textHome
         opportunitiesViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+          //  textView.text = it
         }
         return root
     }

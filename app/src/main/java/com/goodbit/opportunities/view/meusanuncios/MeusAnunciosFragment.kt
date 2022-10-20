@@ -34,6 +34,8 @@ class MeusAnunciosFragment : Fragment() {
         meusAnunciosViewModel.text.observe(viewLifecycleOwner) {
            // textView.text = it
         }
+
+
         return root
     }
 

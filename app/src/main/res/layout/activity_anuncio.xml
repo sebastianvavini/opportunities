@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnuncioActivity">
+
+   <LinearLayout
+
+       android:layout_marginTop="40dp"
+       android:padding="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+
+
+       >
+       <EditText
+           android:id="@+id/edit_descricao"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Descrição do Anúncio"
+
+
+           />
+
+
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="R$ 0,00"
+           android:inputType="numberDecimal"
+
+
+           />
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Demanda"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Oferta"/>
+
+       </RadioGroup>
+
+       <Button
+           android:id="@+id/butonSalvarAnuncio"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Salvar"/>
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
