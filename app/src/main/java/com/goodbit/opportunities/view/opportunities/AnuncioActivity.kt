@@ -22,7 +22,8 @@ class AnuncioActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         viewModel= ViewModelProvider(this).get(AnuncioViewModel::class.java)
-       binding.butonSalvarAnuncio.setOnClickListener(this)
+
+        binding.butonSalvarAnuncio.setOnClickListener(this)
         binding.radioDemanda.isChecked=true
 
     }
