@@ -1,4 +1,4 @@
-package com.goodbit.opportunities
+package com.goodbit.opportunities.view.opportunities
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.goodbit.opportunities.R
 import com.goodbit.opportunities.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-            startActivity(Intent(applicationContext,AnuncioActivity::class.java))
+            startActivity(Intent(applicationContext, AnuncioActivity::class.java))
         }
         setUpNavgation()
 

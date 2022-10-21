@@ -9,7 +9,11 @@
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1703125" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1703125" />
         <entry key="app/src/main/res/layout/fragment_meusanuncios.xml" value="0.10208333333333333" />
+<<<<<<< HEAD
         <entry key="app/src/main/res/layout/fragment_opportunities.xml" value="0.10208333333333333" />
+=======
+        <entry key="app/src/main/res/layout/fragment_opportunities.xml" value="0.22" />
+>>>>>>> 3da1be7cf3008f4f6858e5635cd570733a0ce6cf
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.1703125" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.1703125" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.1703125" />

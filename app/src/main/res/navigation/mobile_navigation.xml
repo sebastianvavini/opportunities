@@ -22,4 +22,6 @@
         android:name="com.goodbit.opportunities.view.meusanuncios.MeusAnunciosFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_meusanuncios" />
+
+
 </navigation>
