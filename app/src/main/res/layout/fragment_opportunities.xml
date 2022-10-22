@@ -8,11 +8,7 @@
     tools:context=".view.opportunities.OpportunitiesFragment">
 
 
-<<<<<<< HEAD
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-=======
+
 
     <ScrollView
         android:id="@+id/scroll_demanda"
@@ -21,8 +17,6 @@
         android:layout_weight="1"
         android:layout_marginTop="8dp"
         android:background="@color/white"
-
-
         >
 
         <TextView
@@ -31,7 +25,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
->>>>>>> 3da1be7cf3008f4f6858e5635cd570733a0ce6cf
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="Demandas"
@@ -48,32 +41,23 @@
         android:layout_weight="1"
         android:layout_marginTop="8dp"
         android:background="@color/white"
-
-
-           >
+        >
 
         <TextView
 
-<<<<<<< HEAD
-        </ScrollView>
-
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-=======
             android:id="@+id/text_ofertas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
->>>>>>> 3da1be7cf3008f4f6858e5635cd570733a0ce6cf
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:textAlignment="center"
             android:text="Ofertas"
             android:textSize="20sp"
-
             />
-    </ScrollView>
+
+
+        </ScrollView>
+
 
 
 </LinearLayout>
