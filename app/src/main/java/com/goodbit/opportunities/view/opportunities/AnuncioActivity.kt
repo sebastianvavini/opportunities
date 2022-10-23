@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.goodbit.opportunities.R
 
 import com.goodbit.opportunities.databinding.ActivityAnuncioBinding
+import com.goodbit.opportunities.model.AnuncioModel
 import com.goodbit.opportunities.viewmodel.AnuncioViewModel
 
 class AnuncioActivity : AppCompatActivity(), View.OnClickListener {
@@ -32,7 +33,21 @@ class AnuncioActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if(v.id== R.id.butonSalvarAnuncio){
+                println("botao funciona")
+            val descricao=binding.editDescricao.text.toString()
+            val preco= binding.editPreco.text.toString().toDouble()
 
+            var tipo:Int
+
+                    if(binding.radioDemanda.isChecked){
+                         tipo=1 // é demanda
+                    }
+                    else{
+                        tipo = 0 // é oferta
+                    }
+
+
+         viewModel.insert(AnuncioModel(1,descricao,preco,tipo))
         }
     }
 }

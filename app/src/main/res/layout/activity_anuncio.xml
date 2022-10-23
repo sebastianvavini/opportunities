@@ -31,6 +31,7 @@
 
 
        <EditText
+           android:id="@+id/edit_preco"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:hint="R$ 0,00"
@@ -45,12 +46,12 @@
                android:id="@+id/radio_demanda"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Demanda"/>
+               android:text="Demanda (voce quer pagar)"/>
            <RadioButton
                android:id="@+id/radio_oferta"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Oferta"/>
+               android:text="Oferta (voce quer ser pago) "/>
 
        </RadioGroup>
 
