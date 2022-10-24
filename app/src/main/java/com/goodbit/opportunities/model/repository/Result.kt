@@ -1,4 +1,4 @@
-package com.goodbit.opportunities.data
+package com.goodbit.opportunities.model.repository
 
 /**
  * A generic class that holds a value with its loading status.

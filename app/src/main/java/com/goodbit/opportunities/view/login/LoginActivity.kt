@@ -1,6 +1,7 @@
 package com.goodbit.opportunities.view.login
 
 import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -15,6 +16,8 @@ import android.widget.Toast
 import com.goodbit.opportunities.databinding.ActivityLoginBinding
 
 import com.goodbit.opportunities.R
+import com.goodbit.opportunities.view.opportunities.AnuncioActivity
+import com.goodbit.opportunities.view.opportunities.MainActivity
 import com.goodbit.opportunities.viewmodel.LoginViewModel
 
 class LoginActivity : AppCompatActivity() {
@@ -59,6 +62,7 @@ class LoginActivity : AppCompatActivity() {
             }
             if (loginResult.success != null) {
                 updateUiWithUser(loginResult.success)
+                startActivity(Intent(applicationContext, MainActivity::class.java))
             }
             setResult(Activity.RESULT_OK)
 

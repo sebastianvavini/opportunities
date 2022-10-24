@@ -1,6 +1,4 @@
-package com.goodbit.opportunities.data
-
-import com.goodbit.opportunities.data.model.LoggedInUser
+package com.goodbit.opportunities.model.repository
 
 /**
  * Class that requests authentication and user information from the remote data source and

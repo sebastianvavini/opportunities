@@ -1,4 +1,4 @@
-package com.goodbit.opportunities.data.model
+package com.goodbit.opportunities.model.repository
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import com.goodbit.opportunities.data.LoginRepository
-import com.goodbit.opportunities.data.Result
+import com.goodbit.opportunities.model.repository.LoginRepository
+import com.goodbit.opportunities.model.repository.Result
 
 import com.goodbit.opportunities.R
 import com.goodbit.opportunities.view.login.LoggedInUserView
@@ -27,6 +27,8 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
         if (result is Result.Success) {
             _loginResult.value =
                 LoginResult(success = LoggedInUserView(displayName = result.data.displayName))
+
+
         } else {
             _loginResult.value = LoginResult(error = R.string.login_failed)
         }

@@ -8,6 +8,7 @@ import com.goodbit.opportunities.model.AnuncioModel
 class AnuncioRepository private constructor(context: Context){
 
     private val database= OpporDataBase(context)
+
     companion object{
         private lateinit var repository: AnuncioRepository
 

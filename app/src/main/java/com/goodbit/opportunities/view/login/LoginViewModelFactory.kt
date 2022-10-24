@@ -2,8 +2,8 @@ package com.goodbit.opportunities.view.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.goodbit.opportunities.data.LoginDataSource
-import com.goodbit.opportunities.data.LoginRepository
+import com.goodbit.opportunities.model.repository.LoginDataSource
+import com.goodbit.opportunities.model.repository.LoginRepository
 import com.goodbit.opportunities.viewmodel.LoginViewModel
 
 /**
