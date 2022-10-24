@@ -1,21 +1,31 @@
 package com.goodbit.opportunities.viewmodel
 
+import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
+import androidx.lifecycle.AndroidViewModel
 import com.goodbit.opportunities.model.repository.LoginRepository
 import com.goodbit.opportunities.model.repository.Result
 
 import com.goodbit.opportunities.R
+import com.goodbit.opportunities.model.repository.AnuncioRepository
 import com.goodbit.opportunities.view.login.LoggedInUserView
 import com.goodbit.opportunities.view.login.LoginFormState
 import com.goodbit.opportunities.view.login.LoginResult
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 
+    //class LoginViewModel(private val loginRepository: LoginRepository,application: Application) :AndroidViewModel(application) {
+    // class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
+//application: Application) :AndroidViewModel(application)
+
+
     private val _loginForm = MutableLiveData<LoginFormState>()
     val loginFormState: LiveData<LoginFormState> = _loginForm
+
+   // private val repository= AnuncioRepository.getInstance(application)
 
     private val _loginResult = MutableLiveData<LoginResult>()
     val loginResult: LiveData<LoginResult> = _loginResult

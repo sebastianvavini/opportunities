@@ -1,11 +1,15 @@
 package com.goodbit.opportunities.model.repository
 
+import android.content.Context
+
 /**
  * Class that requests authentication and user information from the remote data source and
  * maintains an in-memory cache of login status and user credentials information.
  */
 
 class LoginRepository(val dataSource: LoginDataSource) {
+
+    //private val database= OpporDataBase(context)
 
     // in-memory cache of the loggedInUser object
     var user: LoggedInUser? = null
