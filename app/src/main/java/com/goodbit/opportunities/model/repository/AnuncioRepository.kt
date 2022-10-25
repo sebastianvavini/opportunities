@@ -91,7 +91,7 @@ class AnuncioRepository private constructor(context: Context){
 
     fun getAll(){
         val db=database.readableDatabase
-        
+
     }
     fun select(anuncioModel: AnuncioModel):Boolean{
         var retorno:Boolean
