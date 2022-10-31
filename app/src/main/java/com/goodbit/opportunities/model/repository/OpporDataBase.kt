@@ -27,6 +27,26 @@ class OpporDataBase(context: Context) :
                     "$id integer primary key autoincrement,"+
                     "$descricao text,"+ "$preco real,"+"$tipo integer"+
                     ")")
+
+
+
+        val tabela_user= Constants.TABELA.TABLE_NAME_USER
+        val id_user= Constants.COLUMNS_USER.ID
+
+        val username=Constants.COLUMNS_USER.USER
+        val cpf= Constants.COLUMNS_USER.CPF
+        val whats=Constants.COLUMNS_USER.WHATSAPP
+        val password=Constants.COLUMNS_USER.PASSWORD
+
+
+        db.execSQL("create table $tabela_user ("+
+                "$id_user integer primary key autoincrement,"+
+                "$username text,"+ "$cpf text,"+ "$password text,"+"$whats text"+
+                ")")
+
+
+
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

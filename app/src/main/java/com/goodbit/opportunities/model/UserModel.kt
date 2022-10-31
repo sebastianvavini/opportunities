@@ -1,5 +1,5 @@
 package com.goodbit.opportunities.model
 
-class UserModel (cpf:String,whatsapp:String,password:String){
+data class UserModel (val id:Int, val user:String, val cpf:String,val password:String, val whatsapp:String) {
 
 }
