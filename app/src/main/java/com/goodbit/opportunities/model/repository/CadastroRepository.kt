@@ -4,10 +4,11 @@ import android.content.ContentValues
 import android.content.Context
 import com.goodbit.opportunities.constants.Constants
 import com.goodbit.opportunities.model.UserModel
+import com.goodbit.opportunities.model.repository.OpporDataBase
 
 
 class CadastroRepository private constructor(context: Context){
-    private val database= LoginBanco(context)
+    private val database= OpporDataBase(context)
 
     companion object{
         private lateinit var repository: CadastroRepository

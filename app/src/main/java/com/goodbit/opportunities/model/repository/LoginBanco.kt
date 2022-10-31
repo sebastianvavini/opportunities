@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.goodbit.opportunities.constants.Constants
 
-class LoginBanco (context: Context) :
+class LoginBancoTeste (context: Context) :
     SQLiteOpenHelper(context, NAME, null, VERSION) {
 
     companion object {

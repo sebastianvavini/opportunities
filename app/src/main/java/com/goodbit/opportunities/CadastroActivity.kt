@@ -21,6 +21,7 @@ class CadastroActivity : AppCompatActivity() , View.OnClickListener{
 
         binding=ActivityCadastroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        viewModel= ViewModelProvider(this).get(CadastroViewModel::class.java)
 
         binding.buttonSalvar.setOnClickListener(this)
         binding.buttonIrLogin.setOnClickListener(this)
@@ -40,7 +41,7 @@ class CadastroActivity : AppCompatActivity() , View.OnClickListener{
 
 
 
-        viewModel= ViewModelProvider(this).get(CadastroViewModel::class.java)
+
     }
 
     override fun onClick(v: View) {
