@@ -1,4 +1,4 @@
-package com.goodbit.opportunities
+package com.goodbit.opportunities.view.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import com.goodbit.login.viewmodel.CadastroViewModel
+import com.goodbit.opportunities.R
 import com.goodbit.opportunities.databinding.ActivityCadastroBinding
 import com.goodbit.opportunities.model.UserModel
 
@@ -61,8 +62,8 @@ class CadastroActivity : AppCompatActivity() , View.OnClickListener{
 
 
         }
-        if(v.id==R.id.button_ir_login){
-            startActivity(Intent(this,LoginActivity::class.java))
+        if(v.id== R.id.button_ir_login){
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
     }

@@ -90,8 +90,8 @@ class CadastroRepository private constructor(context: Context){
 
     }
 
-    fun getUser(user: UserModel):Boolean{
-        var retorno= false
+    fun getUser(user: UserModel): UserModel? {
+        var retorno: UserModel?= null
 
         try {
             val db = database.writableDatabase
@@ -123,18 +123,17 @@ class CadastroRepository private constructor(context: Context){
                     val whats_=cursor.getString(cursor.getColumnIndex(whats))
                     val id_ =cursor.getInt(cursor.getColumnIndex(id))
 
-                    UserModel(id_,usename_,cpf_,"******",whats_)
+                    var user=UserModel(id_,usename_,cpf_,"******",whats_)
+                    retorno= user
                 }
-                retorno= true
+
             }
             cursor.close()
-
-
 
             return retorno
         }
         catch (e:Exception){
-            return false
+            return null
         }
     }
 
