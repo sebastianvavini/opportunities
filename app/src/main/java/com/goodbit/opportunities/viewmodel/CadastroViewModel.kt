@@ -34,6 +34,9 @@ class CadastroViewModel(application: Application) : AndroidViewModel(application
 
     fun getUser(userModel: UserModel){
         var user= repository.getUser(userModel)
+        if(user!=null) {
+            println("Imprimindo: ${user.user}")
+        }
         logou_.value = user!=null
 
         if(logou_.value==true){

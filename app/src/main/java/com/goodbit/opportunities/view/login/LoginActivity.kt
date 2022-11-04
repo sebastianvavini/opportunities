@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.goodbit.login.viewmodel.CadastroViewModel
 import com.goodbit.opportunities.R
@@ -27,10 +28,18 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
                 viewModel.logou.observe(this){
                     println("Logou, carai = $it")
+                    findViewById<TextView>(R.id.text_user_logado).setText("Texto qualquer")
                     startActivity(Intent(this,MainActivity::class.java))
+
 
                 }
                 viewModel.logado.observe(this){
+                    println("Essa treta ta funcionando-1")
+                    if (it!=null){
+
+                        findViewById<TextView?>(R.id.text_user_logado).setText("Chavinho")
+                        println("Essa treta ta funcionando")
+                    }
 
                 }
 
