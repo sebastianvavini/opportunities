@@ -28,7 +28,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
                 viewModel.logou.observe(this){
                     println("Logou, carai = $it")
-                    findViewById<TextView>(R.id.text_user_logado).setText("Texto qualquer")
+                    if (findViewById<TextView>(R.id.text_user_logado)!=null){
+                        findViewById<TextView>(R.id.text_user_logado).setText("Texto qualquer")
+                    }
+
                     startActivity(Intent(this,MainActivity::class.java))
 
 
